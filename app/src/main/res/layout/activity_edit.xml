@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".edit">
+
+    <EditText
+        android:id="@+id/txt_ttl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Titulo"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <EditText
+        android:id="@+id/txt_edi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Edicion"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <Button
+        android:id="@+id/btn_aplicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplicar"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="94dp" />
+</LinearLayout>
