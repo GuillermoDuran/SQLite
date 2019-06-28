@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     Button btnEdit;
     EditText txtTitle, txtEdition, txtConsultaInd;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,16 +37,16 @@ public class MainActivity extends AppCompatActivity {
         btnWrite.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Book registro1 = new Book(txtTitle.getText().toString(), txtEdition.getText().toString());
-            registro1.save();
+            Book registro = new Book(txtTitle.getText().toString(), txtEdition.getText().toString());
+            registro.save();
             }
         });
 
         btnRead.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, listView.class);
-                startActivity(i);
+            Intent i = new Intent(MainActivity.this, listView.class);
+            startActivity(i);
             }
         });
 
@@ -97,7 +96,5 @@ public class MainActivity extends AppCompatActivity {
         book.title = "Libro 1.1";
         book.edition = "edicion segunda";
         book.save();*/
-
-
     }
 }
